@@ -1,0 +1,71 @@
+@layer base {
+  :root {
+    /* Rose Gold Luxury Theme (Default) */
+    --theme-primary: 12 48% 45%;
+    --theme-secondary: 15 75% 75%;
+    --theme-accent: 18 64% 68%;
+    --theme-background: 12 50% 97%;
+    --theme-text: 12 38% 28%;
+    --theme-muted: 12 25% 62%;
+    --theme-card: 12 40% 95%;
+    --theme-border: 12 35% 88%;
+    --theme-gold: 42 89% 60%;
+    --theme-light-bg: 12 60% 98%;
+    --theme-overlay: 12 48% 92%;
+
+    /* Accent Colors */
+    --accent-warm: 18 100% 62%;
+    --accent-cool: 280 60% 70%;
+    --accent-success: 160 70% 50%;
+
+    /* Base Colors */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+    --radius: 0.5rem;
+  }
+
+  /* Emerald Royal Theme */
+  body.theme-emerald {
+    --theme-primary: 160 48% 35%;
+    --theme-secondary: 160 65% 75%;
+    --theme-accent: 165 70% 65%;
+    --theme-background: 160 50% 97%;
+    --theme-text: 160 38% 18%;
+    --theme-muted: 160 25% 52%;
+    --theme-card: 160 40% 95%;
+    --theme-border: 160 35% 88%;
+    --theme-gold: 50 95% 65%;
+    --theme-light-bg: 160 60% 98%;
+    --theme-overlay: 160 48% 92%;
+  }
+
+  /* Black Gold Premium Theme */
+  body.theme-black-gold {
+    --theme-primary: 0 0% 15%;
+    --theme-secondary: 42 95% 70%;
+    --theme-accent: 42 90% 65%;
+    --theme-background: 0 0% 98%;
+    --theme-text: 0 0% 12%;
+    --theme-muted: 0 0% 50%;
+    --theme-card: 0 0% 96%;
+    --theme-border: 0 0% 88%;
+    --theme-gold: 42 90% 62%;
+    --theme-light-bg: 0 0% 99%;
+    --theme-overlay: 0 0% 95%;
+  }
+}
