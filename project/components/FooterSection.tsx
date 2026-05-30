@@ -306,7 +306,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-
+import {motion} from "framer-motion";
 interface FooterProps {
   onBookAppointment?: () => void;
   onNav?: (item: string) => void;
@@ -330,15 +330,27 @@ export const Footer: React.FC<FooterProps> = ({
             We welcome you to explore our world of timeless elegance
             and exceptional craftsmanship.
           </p>
-          <button 
-            className="group inline-flex items-center gap-3 bg-rose-900 hover:bg-rose-950 px-5 py-2.5  transition-all duration-300 hover:scale-105 hover:shadow-lg"
-            onClick={onBookAppointment}
-          >
-            <span className="text-[10px] sm:text-xs tracking-[0.28em] text-amber-50 uppercase font-['Cormorant_SC']">
-              BOOK AN APPOINTMENT
-            </span>
-            {/* <div className="w-2.5 h-2.5 border border-amber-300/70 rotate-45 transition-transform group-hover:rotate-90 duration-300" /> */}
-          </button>
+          <motion.div >
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.97 }}
+                className="relative overflow-hidden group px-9 py-3.5 text-[#f9dbcb] tracking-[0.2em] uppercase text-xs transition-all duration-400 shadow-lg"
+                style={{
+                  fontFamily: "'Cinzel', serif",
+                  background: 'linear-gradient(135deg, #7B1F2A 0%, #9B3040 100%)',
+                  border: '1px solid rgba(218,165,32,0.3)',
+                }}
+              >
+          
+              
+                <span className="relative z-10">BOOK AN APPOINTMENT</span>
+           
+                <span
+                  className="absolute inset-0 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-400"
+                  style={{ background: 'linear-gradient(135deg, #290102 0%, #7B1F2A 100%)' }}
+                />
+              </motion.button>
+            </motion.div>
         </div>
 
         {/* Vertical Divider 1 - Hidden on mobile */}

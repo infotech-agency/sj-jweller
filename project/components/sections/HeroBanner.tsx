@@ -1768,15 +1768,33 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({
               </span>
             </div>
 
-            <div ref={ctaRef} className="opacity-0">
+            {/* <div ref={ctaRef} className="opacity-0">
               <button
                 onClick={onCtaClick}
-                className="group relative bg-rose-900 font-['Cormorant_SC'] text-[#f9dbcb] px-6 sm:px-8 md:px-10 py-2 sm:py-2.5 overflow-hidden transition-all duration-500 hover:bg-rose-800 hover:tracking-wider text-sm sm:text-base md:text-lg"
+                style={{
+                   fontFamily: "'Cinzel', serif",
+                }}
+                className="group relative bg-rose-900 text-[#f9dbcb] px-6 sm:px-8 md:px-10 py-2 sm:py-2.5 overflow-hidden transition-all duration-500 hover:bg-rose-800 hover:tracking-wider text-sm sm:text-base md:text-lg"
               >
                 <span className="relative z-10 font-sans">Explore Our Collections</span>
                 <span className="absolute inset-0 bg-gradient-to-r from-amber-600/20 to-transparent transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500" />
               </button>
-            </div>
+            </div> */}
+            <div ref={ctaRef} className="opacity-0">
+  <button
+    onClick={onCtaClick}
+    style={{
+      fontFamily: "'Cinzel', serif",
+    }}
+    className="group relative bg-rose-900 text-[#f9dbcb] px-6 sm:px-8 md:px-10 py-2 sm:py-2.5 overflow-hidden transition-all duration-500 hover:bg-rose-800 hover:tracking-wider text-sm sm:text-base md:text-lg"
+  >
+    <span className="relative z-10">
+      Explore Our Collections
+    </span>
+
+    <span className="absolute inset-0 bg-gradient-to-r from-amber-600/20 to-transparent transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500" />
+  </button>
+</div>
           </div>
 
           {/* {jewelryImage && (

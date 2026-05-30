@@ -638,6 +638,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
+import { motion } from 'framer-motion';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -727,10 +728,27 @@ export const FeatureSecond: React.FC<FeaturedBannerProps> = ({
             <div className="w-8 h-px bg-rose-300/70 sm:bg-rose-700/50" />
           </div>
           <p ref={descRef} className="text-sm sm:text-lg text-rose-100/90 sm:text-rose-800/80 leading-relaxed max-w-xs sm:max-w-md mb-6 opacity-0 whitespace-pre-line">{description}</p>
-          <button ref={btnRef} className="group relative inline-flex items-center gap-3 bg-rose-900 hover:bg-[#2c0407] px-6 py-3 sm:px-8 sm:py-3.5 transition-all duration-300 hover:scale-105 hover:shadow-xl opacity-0 overflow-hidden" onClick={onCtaClick}>
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-            <span className="text-[10px] sm:text-xs tracking-[0.25em] text-amber-50 uppercase font-sans font-medium">{ctaText}</span>
-          </button>
+          <motion.div >
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.97 }}
+                className="relative overflow-hidden group px-9 py-3.5 text-[#f9dbcb] tracking-[0.2em] uppercase text-xs transition-all duration-400 shadow-lg"
+                style={{
+                  fontFamily: "'Cinzel', serif",
+                  background: 'linear-gradient(135deg, #7B1F2A 0%, #9B3040 100%)',
+                  border: '1px solid rgba(218,165,32,0.3)',
+                }}
+              >
+          
+              
+                <span className="relative z-10">{ctaText}</span>
+           
+                <span
+                  className="absolute inset-0 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-400"
+                  style={{ background: 'linear-gradient(135deg, #290102 0%, #7B1F2A 100%)' }}
+                />
+              </motion.button>
+            </motion.div>
         </div>
       </div>
 

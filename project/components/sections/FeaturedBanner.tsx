@@ -638,7 +638,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-
+import {motion} from "framer-motion";
 gsap.registerPlugin(ScrollTrigger);
 
 interface FeaturedBannerProps {
@@ -655,7 +655,7 @@ export const FeaturedBanner: React.FC<FeaturedBannerProps> = ({
   backgroundImage = '/assets/feature.png',
   mobileBackgroundImage = '/assets/featuremob4.jpeg',
   label = 'SIGNATURE CREATION · SONI JEWELLERY',
-  title = 'Eternal',
+  title = 'Crafted with values Cherished for generation',
   description = 'Where the whisper of heritage meets the brilliance of pure gold —\na masterpiece handcrafted for the woman who wears legacy.',
   ctaText = 'EXPLORE THE COLLECTION',
   onCtaClick,
@@ -768,30 +768,31 @@ export const FeaturedBanner: React.FC<FeaturedBannerProps> = ({
           </p>
 
           {/* CTA */}
-          <button
-            ref={btnRef}
-            className="group relative inline-flex items-center gap-3 bg-rose-900 hover:bg-rose-950 px-7 py-3 sm:px-9 sm:py-3.5 transition-all duration-300 hover:scale-105 hover:shadow-xl opacity-0 overflow-hidden"
-            style={{ border: '1px solid rgba(218,165,32,0.25)' }}
-            onClick={onCtaClick}
-          >
-            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
-            <span
-              className="text-[9px] sm:text-[10px] tracking-[0.3em] text-amber-50 uppercase"
-              style={{ fontFamily: "'Cinzel', serif" }}
-            >
-              {ctaText}
-            </span>
-            <svg
-              className="w-3.5 h-3.5 text-amber-300 group-hover:translate-x-1 transition-transform duration-300"
-              fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
+          {/* <motion.div >
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.97 }}
+                className="relative overflow-hidden group px-9 py-3.5 text-[#f9dbcb] tracking-[0.2em] uppercase text-xs transition-all duration-400 shadow-lg"
+                style={{
+                  fontFamily: "'Cinzel', serif",
+                  background: 'linear-gradient(135deg, #7B1F2A 0%, #9B3040 100%)',
+                  border: '1px solid rgba(218,165,32,0.3)',
+                }}
+              >
+          
+              
+                <span className="relative z-10">{ctaText}</span>
+           
+                <span
+                  className="absolute inset-0 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-400"
+                  style={{ background: 'linear-gradient(135deg, #290102 0%, #7B1F2A 100%)' }}
+                />
+              </motion.button>
+            </motion.div> */}
 
           {/* Est. tagline */}
           <span
-            className="mt-5 text-[8px] tracking-[0.22em] uppercase text-rose-200/50 sm:text-rose-700/50"
+            className="mt-5 text-[8px] tracking-[0.22em] uppercase text-rose-700/50"
             style={{ fontFamily: "'Cinzel', serif" }}
           >
             Est. 1987 &nbsp;·&nbsp; Haute Joaillerie
