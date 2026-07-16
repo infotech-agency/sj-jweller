@@ -1001,7 +1001,7 @@ export function GallerySection() {
             Our <span className="font-['Cormorant_Garamond'] text-[#53020b] italic">Gallery</span>
           </h2>
 
-          <p className="text-zinc-900 font-['Cormorant_Garamond'] text-sm max-w-md mx-auto">
+          <p className="text-zinc-900 font-['Cormorant_Garamond'] text-[18px] max-w-md mx-auto">
             Discover our exquisite collection of handcrafted masterpieces
           </p>
         </motion.div>

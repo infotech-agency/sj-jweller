@@ -555,7 +555,7 @@ export const Navigation: React.FC<NavigationProps> = ({
     { label: 'COLLECTIONS', href: '#collections' },
   ],
   rightLinks = [
-    { label: 'CRAFTSMANSHIP', href: '#craftsmanship' },
+    { label: 'CORPORATE GIFTS', href: '/gift' },
     { label: 'GALLERY', href: '#gallery' },
     { label: 'CONTACT', href: '#contact' },
   ],

@@ -3,7 +3,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import FooterSection from '@/components/FooterSection';
-import { Footer } from '@/components/Footer';
+
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -50,8 +50,10 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <Navigation/>
-        {children}</body>
-        <FooterSection/>
+        {children}
+         <FooterSection/>
+        </body>
+       
     </html>
   );
 }

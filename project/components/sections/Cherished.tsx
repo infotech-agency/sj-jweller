@@ -88,8 +88,7 @@ const Cherished = () => {
       className="relative bg-[#F9CDB4] min-h-screen font-['Cormorant_Garamond'] flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-16 px-6 sm:px-12 lg:px-20 py-12 lg:py-20 bg-cover bg-center bg-no-repeat"
       style={
         { backgroundImage: "url('/assets/abt3bg.png')" ,
-         
-
+    
         }
        
       
@@ -110,7 +109,7 @@ const Cherished = () => {
           </h1>
         </div>
         
-        <p className='text-sm sm:text-base lg:text-lg leading-relaxed text-[#420E12]/80 max-w-xl'>
+        <p className='text-xl sm:text-base lg:text-lg leading-relaxed text-[#420E12]/80 max-w-xl'>
           For over seven decades, SJ has been committed to excellence, honesty and artistry. 
           Every piece we create is a reflection of our promise — Timeless elegance. 
           Crafted for eternity.
@@ -121,7 +120,7 @@ const Cherished = () => {
       <div className='relative z-10 w-full lg:w-1/2 flex justify-center items-center'>
         <div className='relative w-full max-w-md lg:max-w-lg xl:max-w-full'>
           <Image 
-            src="/assets/heritage.jpg" 
+            src="/assets/shop.jpeg" 
             alt='Heritage jewelry collection - timeless elegance crafted for eternity'
             width={800}
             height={500}

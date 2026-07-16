@@ -460,7 +460,7 @@ export const CraftBg: React.FC<CraftBgProps> = ({
           transition={{ duration: 0.85, ease: [0.25, 0.46, 0.45, 0.94] }}
           className="text-center mb-16 md:mb-20">
 
-          <span className="block text-[9px] tracking-[0.42em] uppercase text-amber-400 mb-5"
+          <span className="block text-[12px] tracking-[0.42em] uppercase text-amber-400 mb-5"
             style={{ fontFamily: "'Cinzel', serif" }}>
             Since 1987 · Soni Jewellery
           </span>
@@ -510,7 +510,7 @@ export const CraftBg: React.FC<CraftBgProps> = ({
           <div className="flex gap-3">
             {[0,1,2].map(i => <div key={i} className="w-1 h-7 rotate-45 bg-amber-500/35" />)}
           </div>
-          <span className="text-[8px] tracking-[0.38em] uppercase text-amber-500"
+          <span className="text-[12px] tracking-[0.38em] uppercase text-amber-500"
             style={{ fontFamily: "'Cinzel', serif" }}>
             Hallmarked · Certified · Lifetime Guaranteed
           </span>

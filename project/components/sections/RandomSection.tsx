@@ -24,13 +24,21 @@ const RandomSection = () => {
             <div className='absolute -inset-1 bg-gradient-to-r from-amber-500 via-amber-600 to-amber-500 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-300'></div>
             <div className='relative bg-[#2A080C] p-3 rounded-lg'>
               <div className='relative overflow-hidden rounded-md'>
-                <Image
-                  src="/assets/grandfather.png"
-                  height={300}
-                  width={200}
+                {/* <Image
+                  src="/assets/granny.jpeg"
+                  height={500}
+                  width={600}
                   alt="Grandfather heritage image"
                   className='w-full h-auto object-cover rounded-md transition-transform duration-500 group-hover:scale-105'
-                />
+                /> */}
+                <div className='relative overflow-hidden rounded-md h-[450px] w-full'>
+  <Image
+    src="/assets/granny.png"
+    fill
+    alt="Heritage artifact"
+    className='object-cover rounded-md transition-transform duration-500 group-hover:scale-105'
+  />
+</div>
                 {/* Vintage Overlay */}
                 <div className='absolute inset-0 bg-gradient-to-t from-[#420E12]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
               </div>
@@ -38,7 +46,8 @@ const RandomSection = () => {
               {/* Image Name/Title Section */}
               <div className='mt-4 text-center space-y-2'>
                 <h3 className='text-amber-400 text-xl md:text-2xl font-serif font-semibold tracking-wide'>
-                  Grandfather's Legacy
+                  {/* Grandfather's Legacy */}
+                  Father: Late Sh. Bhori Lal Soni
                 </h3>
                 <div className='w-12 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto'></div>
                 <p className='text-amber-200/70 text-sm md:text-base font-light italic'>
@@ -60,13 +69,21 @@ const RandomSection = () => {
             <div className='absolute -inset-1 bg-gradient-to-r from-amber-500 via-amber-600 to-amber-500 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-300'></div>
             <div className='relative bg-[#2A080C] p-3 rounded-lg'>
               <div className='relative overflow-hidden rounded-md'>
-                <Image
-                  src="/assets/grandfather.png"
-                  height={500}
-                  width={600}
+                {/* <Image
+                  src="/assets/father.png"
+                  height={300}
+                  width={200}
                   alt="Heritage artifact"
                   className='w-full h-auto object-cover rounded-md transition-transform duration-500 group-hover:scale-105'
-                />
+                /> */}
+                <div className='relative overflow-hidden rounded-md h-[450px] w-full'>
+  <Image
+    src="/assets/fatherfinal.jpg"
+    fill
+    alt="Heritage artifact"
+    className='object-cover rounded-md transition-transform duration-500 group-hover:scale-105'
+  />
+</div>
                 {/* Vintage Overlay */}
                 <div className='absolute inset-0 bg-gradient-to-t from-[#420E12]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
               </div>
@@ -74,7 +91,8 @@ const RandomSection = () => {
               {/* Image Name/Title Section */}
               <div className='mt-4 text-center space-y-2'>
                 <h3 className='text-amber-400 text-xl md:text-2xl font-serif font-semibold tracking-wide'>
-                  Sacred Artifacts
+                  {/* Sacred Artifacts */}
+                  Proprietor: Banwari Lal Soni
                 </h3>
                 <div className='w-12 h-px bg-gradient-to-r from-transparent via-amber-500 to-transparent mx-auto'></div>
                 <p className='text-amber-200/70 text-sm md:text-base font-light italic'>

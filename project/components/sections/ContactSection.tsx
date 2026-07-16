@@ -1305,9 +1305,9 @@ const InfoItem = ({ icon: Icon, label, value, delay }) => {
     >
       <div className="flex items-center gap-2">
         <Icon size={13} className="text-[#7B1F2A] group-hover:scale-110 transition-transform duration-300" />
-        <span className="font-['Cinzel'] text-[9px] tracking-[3px] uppercase text-[#7B1F2A]">{label}</span>
+        <span className="font-['Cinzel'] text-[9px] tracking-[3px] uppercase text-[#7B1F2A] ">{label}</span>
       </div>
-      <p className="font-['Cormorant_Garamond'] text-sm pl-5 text-[#3A1520] tracking-[0.3px]">{value}</p>
+      <p className="font-['Cormorant_Garamond'] font-semibold text-[22px] pl-5 text-[#3A1520] tracking-[0.3px]">{value}</p>
     </motion.div>
   );
 };
@@ -1315,7 +1315,7 @@ const InfoItem = ({ icon: Icon, label, value, delay }) => {
 /* ── Luxury Input ── */
 const LuxuryInput = ({ label, ...props }) => (
   <div className="flex flex-col gap-1.5 w-full">
-    <label className="font-['Cinzel'] text-[9px] tracking-[3px] uppercase text-[#9B3040]">{label}</label>
+    <label className="font-['Cinzel'] text-[14px] tracking-[3px] uppercase text-[#9B3040]">{label}</label>
     <div className="relative border-b border-[#C06070]/25 focus-within:after:w-full after:absolute after:bottom-0 after:left-0 after:h-px after:bg-[#7B1F2A] after:transition-all after:duration-500 after:w-0">
       {props.as === 'textarea' ? (
         <textarea
@@ -1342,7 +1342,7 @@ const MapEmbed = () => (
     className="flex flex-col gap-4 h-full"
   >
     {/* Label */}
-    <p className="font-['Cinzel'] text-[9px] tracking-[4px] uppercase pb-3 text-[#9B3040] border-b border-[#C06070]/25">
+    <p className="font-['Cinzel'] text-[12px] tracking-[4px] uppercase pb-3 text-[#9B3040] border-b border-[#C06070]/25">
       Our Location
     </p>
 
@@ -1354,7 +1354,7 @@ const MapEmbed = () => (
       <div className="absolute bottom-2 left-2 w-5 h-5 border-b border-l border-[#C06070] z-10 pointer-events-none" />
       <div className="absolute bottom-2 right-2 w-5 h-5 border-b border-r border-[#C06070] z-10 pointer-events-none" />
 
-      <iframe
+      {/* <iframe
         title="Soni Jewellery Location"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193596.90932130252!2d-74.1197628!3d40.6974034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
         width="100%"
@@ -1368,7 +1368,18 @@ const MapEmbed = () => (
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
         className="map-frame w-full h-full"
-      />
+      /> */}
+     <iframe 
+     title="Soni Jewellery Location"
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.8292393274455!2d77.22304087495465!3d28.574889986696935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3a4266f1201%3A0xd474a42c913604a4!2sSoni%20Jewellers!5e0!3m2!1sen!2sin!4v1780465738342!5m2!1sen!2sin"
+  width="100%"
+  height="450"
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  title="Soni Jewellers Location"
+/>
 
       {/* Tinted overlay — matches peach theme, non-blocking pointer */}
       <div
@@ -1379,9 +1390,10 @@ const MapEmbed = () => (
 
     {/* Address pill below map */}
     <div className="flex items-center gap-2 px-3 py-2 border border-[#C06070]/20 bg-[#C06070]/5">
-      <MapPin size={12} className="text-[#7B1F2A] flex-shrink-0" />
-      <span className="font-['Cormorant_Garamond'] text-sm italic text-[#3A1520]">
-        New York, USA — By Appointment
+      <MapPin size={14} className="text-[#7B1F2A] flex-shrink-0" />
+      <span className="font-['Cormorant_Garamond'] text-xl font-semibold italic text-[#3A1520]">
+        K/19, 3-4, Kotla Mubarkhpur,Punjabi
+Bazar, New Delhi- 110003
       </span>
     </div>
   </motion.div>
@@ -1408,9 +1420,9 @@ export function ContactSection() {
   };
 
   const contactInfo = [
-    { icon: Mail,   label: 'Email',   value: 'hello@sonijewellery.com' },
-    { icon: Phone,  label: 'Phone',   value: '+1 (800) 234-5678'       },
-    { icon: MapPin, label: 'Atelier', value: 'New York, USA'           },
+    { icon: Mail,   label: 'Email',   value: 'sonijewellers19@yahoo.com' },
+    { icon: Phone,  label: 'Phone',   value: '011-42637373'       },
+    { icon: MapPin, label: 'Atelier', value: 'K/19, 3-4, Kotla Mubarkhpur,Punjabi Bazar, New Delhi- 110003'           },
   ];
 
   return (
@@ -1447,7 +1459,7 @@ export function ContactSection() {
               style={{ fontSize: 'clamp(42px,7vw,68px)' }}>
               Get In <em className="shimmer-maroon not-italic">Touch</em>
             </h2>
-            <p className="font-['Nunito_Sans'] font-light text-sm tracking-wide max-w-sm mx-auto leading-relaxed text-[#9B6070]">
+            <p className="font-['Nunito_Sans'] font-light text-xl tracking-wide max-w-sm mx-auto leading-relaxed text-[#9B6070]">
               Every extraordinary piece begins with a conversation.<br />Reach out to begin your journey.
             </p>
             <ChainBar />
@@ -1458,7 +1470,7 @@ export function ContactSection() {
 
             {/* ── COL 1: INFO ── */}
             <div>
-              <p className="font-['Cinzel'] text-[9px] tracking-[4px] uppercase mb-7 pb-3 text-[#9B3040] border-b border-[#C06070]/25">
+              <p className="font-['Cinzel'] text-[12px] tracking-[4px] uppercase mb-7 pb-3 text-[#9B3040] border-b border-[#C06070]/25">
                 Our Atelier
               </p>
 
@@ -1479,7 +1491,7 @@ export function ContactSection() {
                 {['top-2 left-2','top-2 right-2','bottom-2 left-2','bottom-2 right-2'].map((pos, i) => (
                   <div key={i} className={`absolute ${pos} w-1.5 h-1.5 rotate-45 bg-[#C06070]`} />
                 ))}
-                <p className="font-['Cormorant_Garamond'] text-sm leading-relaxed text-[#9B6070] italic">
+                <p className="font-['Cormorant_Garamond']  font-semibold leading-relaxed text-[#9B6070] italic">
                   "Crafting timeless elegance since 1987. Each creation is a testament to uncompromising artistry."
                 </p>
               </motion.div>

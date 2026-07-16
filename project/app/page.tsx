@@ -25,7 +25,10 @@ import AnotherBg from '@/components/demo/AnotherBg';
 import { QuoteBg } from '@/components/sections/Quote';
 import FloatingLeaves from '@/components/FloatingLeaves';
 import GoldCoinsPage from '@/components/sections/GoldCoins';
-import PeopleBehindSJ from '@/components/sections/PeopleBehindSj';
+import { CollapsibleContent } from '@/components/ui/collapsible';
+import AuthenticityCertificate from '@/components/sections/AuthenticityCertificate';
+import OurProducts from '@/components/sections/OurProducts';
+// import PeopleBehindSJ from '@/components/sections/PeopleBehindSj';
 
 
 // export default function Home() {
@@ -110,7 +113,8 @@ export default function Home() {
       </div>
 
       <GoldCoinsPage />
-
+       <AuthenticityCertificate/>
+       <OurProducts/>
       {/* ✅ DARK - data-dark-section add kiya */}
       <div id="craftsmanship" data-dark-section>
         <CraftBg />
@@ -118,6 +122,7 @@ export default function Home() {
 
       <div id="gallery">
         <GallerySection />
+        {/* <CollapsibleContent/> */}
       </div>
 
       <div id="featured">
@@ -128,6 +133,7 @@ export default function Home() {
       <div id="art" data-dark-section>
         <ArtSection />
       </div>
+     
 
       <div id="testimonial">
         <QuoteBg />

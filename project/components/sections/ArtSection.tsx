@@ -497,7 +497,7 @@ export const ArtSection: React.FC<FeaturedBannerProps> = ({
 
           <span
             ref={labelRef}
-            className="text-[9px] sm:text-[10px] tracking-[0.3em] text-[#e0c9b0] sm:text-rose-800 uppercase mb-2 opacity-0 font-['Cormorant_SC']"
+            className="text-[10px] sm:text-[10px] tracking-[0.3em] text-[#e0c9b0] sm:text-[#e0c9b0] uppercase mb-2 opacity-0 font-['Cormorant_SC']"
           >
             {label}
           </span>

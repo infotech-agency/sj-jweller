@@ -7,17 +7,17 @@ import { slideInLeftVariants, staggerContainerVariants, fadeUpVariants } from '@
 import Link from 'next/link';
 
 const PILLARS = [
-  'Handcrafted by master karigars with over three decades of inherited expertise',
-  'Finest 22kt & 24kt gold, certified diamonds, and ethically-sourced precious gemstones',
-  'Every creation passes our seven-stage quality inspection before leaving our atelier',
-  'Lifetime authenticity certificate, complimentary polishing & maintenance assured',
+  'Three generations of unwavering honesty, purity, and exceptional craftsmanship',
+  'Hallmark Gold Jewellery with secure, verifiable HUID Certification',
+  'Certified Diamond Jewellery and premium Hallmark Silver collections',
+  'Preserving rich family traditions while embracing modern, contemporary designs',
 ];
 
 const STATS = [
-  { value: '1987', label: 'Est.' },
-  { value: '37+', label: 'Years of Legacy' },
-  { value: '10K+', label: 'Families Adorned' },
-  { value: '100%', label: 'Hallmarked Gold' },
+  { value: '1960s', label: 'Legacy Start' },
+  { value: '3', label: 'Generations' },
+  { value: '60+', label: 'Years of Trust' },
+  { value: '100%', label: 'HUID Certified' },
 ];
 
 export function AboutSection() {
@@ -64,7 +64,7 @@ export function AboutSection() {
               style={{ border: '1px solid rgba(218,165,32,0.18)' }}
             >
               <img
-                src="https://t4.ftcdn.net/jpg/18/07/68/05/360_F_1807680503_au4MMBPButjY3HfddHDhf8pybU4CeKDB.jpg"
+                src="/assets/aboutfin.jpeg"
                 alt="Soni Jewellery Craftsmanship"
                 className="w-full h-full object-cover"
                 style={{ filter: 'sepia(18%) contrast(1.05) brightness(0.92)' }}
@@ -84,8 +84,7 @@ export function AboutSection() {
                 transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
                 className="absolute top-6 right-6 px-5 py-4 shadow-xl text-center"
                 style={{
-                  // background: 'rgba(255,252,245,0.97)',
-                  backgroundColor:"#f2d2bf",
+                  backgroundColor: "#f2d2bf",
                   border: '1px solid rgba(218,165,32,0.35)',
                 }}
               >
@@ -93,13 +92,13 @@ export function AboutSection() {
                   className="text-xs font-semibold tracking-[0.18em] uppercase"
                   style={{ fontFamily: "'Cinzel', serif", color: '#1e0204', fontSize: 10 }}
                 >
-                  Established
+                  Since the
                 </p>
                 <p
                   className="text-3xl font-semibold mt-0.5 leading-none"
                   style={{ fontFamily: "'Cormorant Garamond', serif", color: '#290102' }}
                 >
-                  1987
+                  1960s
                 </p>
               </motion.div>
 
@@ -124,7 +123,7 @@ export function AboutSection() {
                     {value}
                   </span>
                   <span
-                    className="mt-1 text-[9px] tracking-[0.14em] uppercase text-white"
+                    className="mt-1 text-[11px] tracking-[0.14em] uppercase text-white"
                     style={{ fontFamily: "'Cinzel', serif" }}
                   >
                     {label}
@@ -145,12 +144,12 @@ export function AboutSection() {
             {/* Accent label */}
             <motion.div variants={fadeUpVariants} className="flex items-center gap-3">
               <div className="w-8 h-px bg-amber-500" />
-              <span
-                className="text-xs tracking-[0.28em] uppercase text-amber-400"
+              <p
+                className="text-2xl tracking-[0.28em] uppercase text-amber-400"
                 style={{ fontFamily: "'Cinzel', serif", fontSize: 10 }}
               >
-                Our Story
-              </span>
+                Our Legacy
+              </p>
             </motion.div>
 
             {/* Heading */}
@@ -159,12 +158,12 @@ export function AboutSection() {
               className="leading-tight text-[#f5e6d8]"
               style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}
             >
-              <span className="block text-4xl md:text-5xl">A Legacy Written</span>
+              <span className="block text-4xl md:text-5xl">A Legacy of Trust,</span>
               <span
                 className="block italic text-5xl md:text-6xl text-amber-400 mt-1"
                 style={{ fontWeight: 400 }}
               >
-                in Gold & Gemstones
+                Purity & Craftsmanship
               </span>
             </motion.h2>
 
@@ -178,13 +177,11 @@ export function AboutSection() {
             {/* Description */}
             <motion.p
               variants={fadeUpVariants}
-              className="text-lg md:text-xl leading-relaxed text-zinc-300"
+              className="text-lg md:text-xl leading-relaxed text-zinc-200 "
               style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 300 }}
             >
-              Since 1987, Soni Jewellery has graced generations of families with pieces that
-              transcend time. Born in the heart of India's finest jewellery tradition, every
-              creation from our atelier carries the soul of master craftsmanship — where
-              heritage meets the whisper of eternity.
+              The journey of <span className='font-semibold text-amber-500 text-[24px]'>Soni Jewellers<sup className=''>®</sup></span> began in the <b>1960s</b> when the <span className='font-semibold text-amber-500 text-[24px]'>
+                Late Shri Bhori Lal Soni</span> arrived in Delhi with a vision of exceptional craftsmanship and an unwavering commitment to honesty. For over <span className='font-semibold text-amber-500 text-[24px]'>six decades</span>, spanning three generations, we have remained committed to offering genuine products and maintaining the highest standards of purity, never compromising on the faith our families place in us.
             </motion.p>
 
             {/* Pillars */}
@@ -195,7 +192,7 @@ export function AboutSection() {
                     <div className="w-1.5 h-1.5 rotate-45 bg-amber-500 group-hover:bg-amber-300 transition-colors duration-300" />
                   </div>
                   <p
-                    className="text-sm md:text-base text-white/75 group-hover:text-white/95 transition-colors duration-300 leading-relaxed"
+                    className="text-xl md:text-base text-white group-hover:text-white/95 transition-colors duration-300 leading-relaxed"
                     style={{ fontFamily: "'Cormorant Garamond', serif" }}
                   >
                     {point}
@@ -206,25 +203,24 @@ export function AboutSection() {
 
             {/* CTA */}
             <motion.div variants={fadeUpVariants}>
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.97 }}
-                className="relative overflow-hidden group px-9 py-3.5 text-[#f9dbcb] tracking-[0.2em] uppercase text-xs transition-all duration-400 shadow-lg"
-                style={{
-                  fontFamily: "'Cinzel', serif",
-                  background: 'linear-gradient(135deg, #7B1F2A 0%, #9B3040 100%)',
-                  border: '1px solid rgba(218,165,32,0.3)',
-                }}
-              >
-              <Link href="/about">
-              
-                <span className="relative z-10">Discover Our Legacy</span>
+              <Link href="/about" passHref legacyBehavior>
+                <motion.a
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.97 }}
+                  className="inline-block relative overflow-hidden group px-9 py-3.5 text-[#f9dbcb] tracking-[0.2em] uppercase text-xs transition-all duration-400 shadow-lg cursor-pointer"
+                  style={{
+                    fontFamily: "'Cinzel', serif",
+                    background: 'linear-gradient(135deg, #7B1F2A 0%, #9B3040 100%)',
+                    border: '1px solid rgba(218,165,32,0.3)',
+                  }}
+                >
+                  <span className="relative z-10">Discover Our Full Journey</span>
+                  <span
+                    className="absolute inset-0 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-400"
+                    style={{ background: 'linear-gradient(135deg, #290102 0%, #7B1F2A 100%)' }}
+                  />
+                </motion.a>
               </Link>
-                <span
-                  className="absolute inset-0 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-400"
-                  style={{ background: 'linear-gradient(135deg, #290102 0%, #7B1F2A 100%)' }}
-                />
-              </motion.button>
             </motion.div>
           </motion.div>
         </div>
