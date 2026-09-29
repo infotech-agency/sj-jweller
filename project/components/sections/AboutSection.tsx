@@ -64,7 +64,7 @@ export function AboutSection() {
               style={{ border: '1px solid rgba(218,165,32,0.18)' }}
             >
               <img
-                src="/assets/aboutfin.jpeg"
+                src="/assets/earing.png"
                 alt="Soni Jewellery Craftsmanship"
                 className="w-full h-full object-cover"
                 style={{ filter: 'sepia(18%) contrast(1.05) brightness(0.92)' }}

@@ -3,6 +3,8 @@
 import { useRef } from 'react';
 import Image from 'next/image';
 import { motion, useInView } from 'framer-motion';
+import { Cormorant_Garamond } from "next/font/google";
+
 
 /**
  * OurProducts — royal maroon / antique-gold luxury section
@@ -20,11 +22,12 @@ import { motion, useInView } from 'framer-motion';
 const PRODUCTS = [
   { title: 'Gold Coins / Bars', tag: '999.9 Fine', image: '/products/gold.png' },
   { title: 'Silver Coins / Bars', tag: '999.9 Fine', image: '/products/silver.png' },
-  { title: 'Gold Pendants', tag: 'Deity Series', image: '/products/pendant.png' },
+  // { title: 'Gold Pendants', tag: 'Deity Series', image: '/products/pendant.png' },
 //   { title: 'Silver Colour Coins', tag: 'Hand Enamelled', image: '/products/.jpg' },
 //   { title: 'Acrylic Series', tag: 'Display Edition', image: '/images/products/acrylic-series.jpg' },
-  { title: 'Customised Coins', tag: 'Made For You', image: '/products/custom.png' },
-  { title: 'Silver Cast Bar', tag: 'Investment Grade', image: '/products/silver-bar.png' },
+  // { title: 'Customised Coins', tag: 'Made For You', image: '/products/custom.png' },
+  { title: 'Silver Cast Bar', tag: 'Investment Grade', image: '/coins/images/sj_silver_cast_bar.png' },
+   { title: 'Gold Cast Bar', tag: 'Investment Grade', image: '/coins/images/sj_gold_cast_bar.png' },
 //   { title: 'Frame', tag: 'Heirloom Edition', image: '/images/products/frame.jpg' },
 ];
 
@@ -189,8 +192,8 @@ export default function OurProducts() {
           </div>
 
           <p
-            className="mx-auto mt-6 max-w-3xl text-base leading-relaxed md:text-lg"
-            style={{ color: 'hsl(var(--theme-text))' }}
+            className="mx-auto mt-6 max-w-3xl text-base  leading-relaxed md:text-lg"
+            style={{ color: 'hsl(var(--theme-text))', fontFamily: "'Cormorant Garamond', serif" }}
           >
             Soni Jewellers Refinery is famed for its wide range of gold and silver coins and
             bars, marking the purest form of the metal. Every piece is struck in

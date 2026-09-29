@@ -148,7 +148,7 @@ function HeroBanner() {
             </button>
            
           </motion.div> */}
-          <motion.div >
+          {/* <motion.div >
                         <motion.button
                           whileHover={{ scale: 1.02 }}
                           whileTap={{ scale: 0.97 }}
@@ -168,7 +168,29 @@ function HeroBanner() {
                             style={{ background: 'linear-gradient(135deg, #290102 0%, #7B1F2A 100%)' }}
                           />
                         </motion.button>
-                      </motion.div>
+                      </motion.div> */}
+                      <motion.div>
+  <motion.a
+    href="https://wa.me/919873818283"
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.02 }}
+    whileTap={{ scale: 0.97 }}
+    className="relative overflow-hidden mt-3 group px-9 py-3.5 text-[#f9dbcb] tracking-[0.2em] uppercase text-xs transition-all duration-400 shadow-lg inline-block"
+    style={{
+      fontFamily: "'Cinzel', serif",
+      background: 'linear-gradient(135deg, #7B1F2A 0%, #9B3040 100%)',
+      border: '1px solid rgba(218,165,32,0.3)',
+    }}
+  >
+    <span className="relative z-10">REQUEST A QUOTE</span>
+
+    <span
+      className="absolute inset-0 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-400"
+      style={{ background: 'linear-gradient(135deg, #290102 0%, #7B1F2A 100%)' }}
+    />
+  </motion.a>
+</motion.div>
         </motion.div>
 
         {/* Right: image */}
@@ -425,7 +447,7 @@ function CallToAction() {
           elegant gold and silver coins.
         </p>
 
-       <motion.div >
+       {/* <motion.div >
                      <motion.button
                        whileHover={{ scale: 1.02 }}
                        whileTap={{ scale: 0.97 }}
@@ -445,7 +467,29 @@ function CallToAction() {
                          style={{ background: 'linear-gradient(135deg, #290102 0%, #7B1F2A 100%)' }}
                        />
                      </motion.button>
-                   </motion.div>
+                   </motion.div> */}
+                   <motion.div>
+  <motion.a
+    href="https://wa.me/919873818283"
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.02 }}
+    whileTap={{ scale: 0.97 }}
+    className="relative overflow-hidden mt-5 group px-9 py-3.5 text-[#f9dbcb] tracking-[0.2em] uppercase text-xs transition-all duration-400 shadow-lg inline-block"
+    style={{
+      fontFamily: "'Cinzel', serif",
+      background: 'linear-gradient(135deg, #7B1F2A 0%, #9B3040 100%)',
+      border: '1px solid rgba(218,165,32,0.3)',
+    }}
+  >
+    <span className="relative z-10">BOOK AN APPOINTMENT</span>
+
+    <span
+      className="absolute inset-0 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-400"
+      style={{ background: 'linear-gradient(135deg, #290102 0%, #7B1F2A 100%)' }}
+    />
+  </motion.a>
+</motion.div>
       </motion.div>
     </section>
   );

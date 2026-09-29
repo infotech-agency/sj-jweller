@@ -98,7 +98,7 @@ export default function Home() {
       <Sparkles />
       <Navigation />
       
-      <div id="home" className="sm:mt-0">
+      <div id="home" className="sm:mt-0" data-dark-section>
         <HeroBanner />
       </div>
 
@@ -112,8 +112,7 @@ export default function Home() {
         <BackgroundImage />
       </div>
 
-      <GoldCoinsPage />
-       <AuthenticityCertificate/>
+     
        <OurProducts/>
       {/* ✅ DARK - data-dark-section add kiya */}
       <div id="craftsmanship" data-dark-section>
@@ -125,19 +124,19 @@ export default function Home() {
         {/* <CollapsibleContent/> */}
       </div>
 
-      <div id="featured">
+      {/* <div id="featured">
         <FeatureSecond />
-      </div>
+      </div> */}
 
       {/* ✅ DARK - data-dark-section add kiya */}
-      <div id="art" data-dark-section>
+      {/* <div id="art" data-dark-section>
         <ArtSection />
       </div>
      
 
       <div id="testimonial">
         <QuoteBg />
-      </div>
+      </div> */}
 
       <div id="contact">
         <ContactSection />

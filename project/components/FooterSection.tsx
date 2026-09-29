@@ -26,7 +26,7 @@ export const Footer: React.FC<FooterProps> = ({
             We welcome you to explore our world of timeless elegance
             and exceptional craftsmanship.
           </p>
-          <motion.div >
+          {/* <motion.div >
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.97 }}
@@ -46,7 +46,29 @@ export const Footer: React.FC<FooterProps> = ({
                   style={{ background: 'linear-gradient(135deg, #290102 0%, #7B1F2A 100%)' }}
                 />
               </motion.button>
-            </motion.div>
+            </motion.div> */}
+            <motion.div>
+  <motion.a
+    href="https://wa.me/919873818283"
+    target="_blank"
+    rel="noopener noreferrer"
+    whileHover={{ scale: 1.02 }}
+    whileTap={{ scale: 0.97 }}
+    className="relative overflow-hidden group px-9 py-3.5 text-[#f9dbcb] tracking-[0.2em] uppercase text-xs transition-all duration-400 shadow-lg inline-block"
+    style={{
+      fontFamily: "'Cinzel', serif",
+      background: 'linear-gradient(135deg, #7B1F2A 0%, #9B3040 100%)',
+      border: '1px solid rgba(218,165,32,0.3)',
+    }}
+  >
+    <span className="relative z-10">BOOK AN APPOINTMENT</span>
+
+    <span
+      className="absolute inset-0 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-400"
+      style={{ background: 'linear-gradient(135deg, #290102 0%, #7B1F2A 100%)' }}
+    />
+  </motion.a>
+</motion.div>
         </div>
 
         {/* Vertical Divider 1 - Hidden on mobile */}
@@ -59,7 +81,7 @@ export const Footer: React.FC<FooterProps> = ({
             
           </div> */}
           <Image 
-              src="/assets/logo.png"  // Changed from import to direct path
+              src="/assets/logo3.png"  // Changed from import to direct path
               alt="Logo" 
               width={46} 
               height={46} 
@@ -106,18 +128,7 @@ export const Footer: React.FC<FooterProps> = ({
         {/* Vertical Divider 2 - Hidden on mobile */}
         <div className="hidden md:block w-px h-24 bg-rose-700/25 justify-self-center" />
 
-        {/* RIGHT COLUMN */}
-        {/* <div className="flex flex-row md:flex-col flex-wrap justify-center gap-3 md:gap-2 px-0 md:pl-12">
-          {['Collections', 'Our Story', 'Contact', 'Privacy Policy'].map((item) => (
-            <button
-              key={item}
-              className="text-xs sm:text-sm tracking-[0.22em] text-rose-800 hover:text-rose-950 uppercase font-['Cormorant_SC'] transition-colors duration-300 hover:translate-x-1 md:hover:translate-x-0 md:hover:translate-y-[-2px] transition-transform"
-              onClick={() => onNav?.(item)}
-            >
-              {item}
-            </button>
-          ))}
-        </div> */}
+       
         <div className="max-w-sm text-center md:text-left px-4 md:px-0 md:pl-12">
   <p className="text-sm md:text-base text-rose-800 italic leading-relaxed font-['Cormorant_Garamond']">
     "Jewelry is more than an accessory — it is a reflection of timeless beauty,
